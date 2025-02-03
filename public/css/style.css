@@ -1,0 +1,26 @@
+body{
+    margin-left:20px ;
+}
+.chat{
+    background-color: burlywood;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.msg{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.msg a{
+    color: white;
+}

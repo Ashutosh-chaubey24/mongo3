@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatsapp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>all chats</h1>
+    <form action="/chats/new" method="get">
+        <button type="submit">new chat</button>
+    </form>
+    <br>
+    <%for(user of users){%>
+        <div class="chat">
+            <p><%=user.from %></p>
+            <div class="msg">
+                <p><%=user.msg %></p>
+                <a href="/chats/<%=user._id %>/edit">edit</a>
+                <br>
+                <form action="/chats/<%=user._id %>?_method=delete", method="post">
+                    
+                </form>
+                <button id="delete" type="submit">delete</button>
+            </div>
+            <p>received by <%=user.to %></p>
+            
+            <hr>
+            <p><%=user.create_at.toString().split(" ")[4]%></p>
+            <p><%=user.create_at.toString().split(" ").slice(0,4).join("-")%></p>
+            
+        </div>
+        <br>
+        <br>
+        <%  }%>
+
+</body>
+<script src="js/script.js"></script>
+</html>
+ 
