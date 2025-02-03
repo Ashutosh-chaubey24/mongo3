@@ -7,7 +7,7 @@
    if(msg=="yes"){
 alert("msg is deleted")
    }else{
-    alert("ok")
+    alert("ok hello") 
    }
 
  })
